@@ -1,0 +1,56 @@
+html,body{
+    background-color: #FFFFFF;
+    font-family: monospace;
+    text-align: center;
+    color: #141414;
+}
+main {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+header{
+align-self: center;
+    align-items: center;
+    
+}
+main header h1{
+    font-size: 3em;
+}
+main header p{
+    font-size: 16px;
+}
+#img-div{
+    border: 5px solid white;
+    background-color: #ffffff;
+    margin: auto;
+    width: 96%;
+}
+#img{
+    
+    width: 100%;
+    height: auto;
+}
+#tribute-info h2{
+    font-size: 1.7em;
+}
+ul{
+    justify-self: center;
+    text-align: left;
+    max-width: 550px;
+    margin: auto;
+    font-size: 1.3em;
+}
+footer{
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+footer p{
+    display: block;
+    max-width: 1000px;
+    margin: auto;
+    font-size: 1.1em;
+}
