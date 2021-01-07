@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+
+}
+html,body{
+    background-color: #fff;
+     margin: 0;
+    font-size: 100%;
+    font:1.15em/1.3 'IBM Plex Sans Condensed','Helvetica',Arial;
+    font-weight: 300;
+}
+/*-----------------------------------------------------------
+-----------------------GENERAL TEXT RULES----------------------
+-----------------------------------------------------------*/
+h1{
+    font: 2em/1 'IBM Plex Sans Condensed','Helvetica',Arial;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+}
+h2{
+    font: 1.35em/1 'IBM Plex Sans Condensed','Helvetica',Arial;
+    font-weight: 400;
+    text-align: center;
+
+    margin-bottom: 5px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+/*-----------------------------------------------------------
+-----------------NAVIGATION RULES-------------------------
+-----------------------------------------------------------*/
+
+
+/*--------------Menu botton-------------*/
+
+/*--------------------navlist------------------------------*/
+
+/*-----------------NOSCRIPT STYLER--------------------*/
+
+/*-----------------------------------------------------------
+--------------------SECTION RULES------------------------------
+-----------------------------------------------------------*/
+section{
+}
+/*-----------------------------------------------------------
+---------------------------HEADER----------------
+-----------------------------------------------------------*/
+
+section#page-header{
+    height: 100vh;
+    width: 100%;
+    background: #ccc;
+    background-size: cover;
+    color: #000;
+    display: table;
+    -moz-box-shadow: -1px 5px 5px rgba(0,0,0,0.4);
+     -webkit-box-shadow: -1px 5px 5px rgba(0,0,0,0.4);
+      box-shadow: -1px 5px 10px rgba(0,0,0,0.6);
+}
+section#page-header header{
+    width: 100%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+
+/*-------PAGE CONTENT----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+section#contact{
+    text-align: center;
+
+
+}
+section#contact div{
+    background: #ccc;
+}
+section#contact h1{
+    margin-top: 1rem;
+}
+section#contact ul{
+    width: 30%;
+    margin: 1em auto;
+    padding: 1em  auto;
+    overflow: hidden;
+
+}
+section#contact ul li{
+    float: left;
+    width: 50%;
+}
+section#contact ul li .divimg{
+    display: block;
+    width: 60%;
+    max-width: 100px;
+    margin: auto;
+}
+section#contact ul li .divimg img{
+    display: block;
+    width: 100%;
+    /*max-width: 100px;*/
+    margin: auto;
+}
+
+/*----------------------------------Modal window------------------------*/
+section#contact ul li div#emailformmodal{
+    z-index: 500;
+    display: none;
+    margin: 0px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 10vh 15vw 10vh 15vw;
+    width: 70vw;
+    height: 80vh;
+    background-color: hsla(109, 19%, 10%, 0.63);
+    overflow-x: auto;
+    
+}
+section#contact ul li div#emailformmodal h1{
+    color: white;
+    font-size: 1.5em;
+    margin-top: 0.5em
+}
+/*Closing X for modals starts*/
+section#contact ul li div#modalClose{
+   float: right;
+    z-index: 51;
+    margin: 0px;
+    margin-left: 5px;
+    padding: 5px;
+    font-weight: 600;
+    position: fixed;
+    top:10vh;
+    left: 15vw;
+    background-color: hsla(109, 19%, 10%, 0.00);
+    color: white;
+}
+section#contact ul li div#modalClose:hover{
+    cursor: pointer;
+} 
+/*Closing X for modal ends*/
+section#contact ul li a#modalShow{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+section#contact ul li div#emailformmodal form{
+    margin-top: 3%;
+}
+section#contact ul li div#emailformmodal div.rowTab{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr,2fr;
+        grid-template-areas:
+            "labels rightTab";
+    padding: 0px;
+    width: 100%;
+    grid-gap: 50px;
+    background: none;
+    text-align: center;
+    margin-top: 0.5em;
+    -moz-box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+     -webkit-box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+      box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+}
+
+section#contact ul li div#emailformmodal div.labels{
+     margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: right;
+    background: none;
+    color: white;
+    min-width: 80px;
+    -moz-box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+     -webkit-box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+      box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+}
+section#contact ul li div#emailformmodal div.rightTab{
+     
+    padding: 0px;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+     max-width: 250px;
+    background: none;
+    color: white;
+    -moz-box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+     -webkit-box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+      box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+}
+section#contact ul li div#emailformmodal div.textField{
+    margin-left: 12px;
+}
+section#contact ul li div#emailformmodal div.rowTabCheck{
+    color: white;
+    text-align: center;
+        margin: auto;
+         margin-top: 5px;
+    padding: 0;
+    display: inline-block;
+    background: none;
+    -moz-box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+     -webkit-box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+      box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+}
+section#contact ul li div#emailformmodal div.rowTabCheck label{
+    padding-top: 6px;
+}
+section#contact ul li div#emailformmodal div.rowTabCheck input#subscribe{
+    width: 16px;
+    float: left;
+}
+section#contact ul li div#emailformmodal div.submit{
+    background-color: hsla(109, 19%, 10%, 0.00);
+}
+/*Modal window ends*/
+
+
+/*---------     MEDIA QUERIES -------------------*/
+@media(min-width: 700px ){
+    section#page-header{
+        background: #ccc;
+        background-size: cover;
+    }

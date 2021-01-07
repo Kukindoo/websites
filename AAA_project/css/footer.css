@@ -1,0 +1,61 @@
+/*--------------------Footer------------------*/
+footer{
+    background-color: #282C37;
+    color: white;
+    font-size: 0.5em;
+    text-align: center;
+}
+footer div.topPage{
+    background-color: #383C47;
+    text-align: center;
+    padding: 15px;
+}
+footer div.topPage a{
+    text-decoration: none;
+    color: white;
+}
+footer div.topPage a:active{
+    text-decoration: none;
+    color: white;
+}
+footer div.topPage p::before{
+    position: relative;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+    border: solid 10px transparent;   /* Determine how wide is base*/
+    border-bottom: solid 5px #B1B1B3; /* Determine where is wider base of triangle*/
+    border-top-width: 0;   /*Determine how wide is point*/
+    top: -7px;
+    margin: auto;
+}
+
+footer div.footerSelection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+}
+footer div.footerSelection ul{
+    display: block;
+    text-align: center;
+}
+footer div.footerSelection ul li{
+    padding: 5px;
+}
+footer div.footerSelection ul li a{
+    color: white;
+}
+footer div.footerSelection ul li a:active{
+    color: white;
+}
+footer div.termsLine{
+    display: block;
+    padding: 5px;
+}
+footer div.termsLine a{
+    color: white;
+}
+footer div.termsLine a:active{
+    color: white;
+}

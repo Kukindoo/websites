@@ -1,0 +1,92 @@
+/*-------------------Navigation ------------------------------*/
+section#navigation-bar{
+    display:inline-block;
+    width: 100%;
+    height: 5em;
+    background-color: #282C37;
+}
+section#navigation-bar div.logo{
+    float: left;
+    height: 100%;
+}
+section#navigation-bar div.logo img{
+    height: 100%;
+}
+section#navigation-bar div.menu{
+    float: right;
+    height: 100%;
+    width: 105px;
+    text-align: center;
+}
+section#navigation-bar div.menu  a img{
+   height: 70%;
+    padding: 15%;
+}
+/*Dropfall style*/
+#navDownfall1{
+    display: none;
+}
+section#navigation-bar div.menu nav#navDownfall1{
+    position: fixed;
+    background: #ccc;
+    left: 0;
+    top: 5em;
+    width: 100%;
+}
+section#navigation-bar div.menu nav::before{
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+    border: solid 20px transparent;   /* Determine how wide is base*/
+    border-bottom: solid 15px #B1B1B3; /* Determine where is wider base of triangle*/
+    border-top-width: 0;   /*Determine how wide is point*/
+    top: -15px;
+    right:30px;
+}
+section#navigation-bar div.menu nav ul#navlist{
+    display:block;
+}
+section#navigation-bar div.menu nav ul#navlist li{
+    display: block;
+    background: #B1B1B3;
+    text-align: center;
+    margin: 0px 0px 1px 0px;
+    padding: 11px;
+}
+section#navigation-bar div.menu nav a{
+    text-decoration: none;
+    font-size: 0.2in;
+    color: black;
+}
+/*@media (min-width: 768px) {
+    
+        section#navigation-bar div.logo{
+            margin-left: 5%;
+        }
+    section#navigation-bar div.menu{
+        margin-right: 5%;
+    }
+    
+}
+@media (min-width: 1200px) {
+    
+     
+    section#navigation-bar div.logo{
+        margin-left: 10%;
+    }
+    section#navigation-bar div.menu{
+        margin-right: 10%;
+    }
+}
+@media (min-width: 1500px) {
+    
+     
+    section#navigation-bar div.logo{
+        margin-left: 15%;
+    }
+    section#navigation-bar div.menu{
+        margin-right: 15%;
+    }
+}

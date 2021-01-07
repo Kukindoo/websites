@@ -1,0 +1,28 @@
+html,body{
+    background-color: #d9dadE;
+     margin: 0;
+    font-size: 100%;
+    font:1.15em/1.3 'IBM Plex Sans Condensed','Helvetica',Arial;
+    font-weight: 300;
+}
+html{
+    border: 1px solid black;
+}
+.pad-bot-5{
+    padding-bottom: 5px;
+}
+/*@media only screen and (min-width: 768px) {
+    body{
+        max-width: 800px;
+        margin: auto;
+        
+    }*/
+}
+@media (min-width: 768px) {
+    section#mainDislay{
+        max-width: 1000px;
+        margin: auto;
+        text-align: center;
+    }
+    
+}
