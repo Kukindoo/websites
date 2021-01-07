@@ -1,0 +1,97 @@
+html,body{
+    background-color:lightseagreen;
+}
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#main {
+    background-color: #f3f3f3;
+    margin: 0 5vmin;
+    border-radius: 5px;
+    padding-bottom: 5px;
+}
+#main p{
+    text-align: center;
+    padding-top: 25px;
+    
+}
+.rowTab{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    grid-template-areas: 
+        "labels rightTab";
+    margin: auto;
+    padding: 5px;
+}
+.labels{
+    display: inline-block;
+    text-align: right;
+}
+rightTab{
+    display: inline-block;
+    text-align: left;
+}
+.radio{
+    display: block;
+}
+.check{
+    line-height: 1.5em;
+}
+.userInt{
+    float: left;
+}
+ul{
+    padding: 0;
+    margin: auto;
+}
+ button{
+    display: block;
+    margin: 10px auto;
+    background-color: cornflowerblue;
+    color: white;
+    border: 1px solid #6f6f6f;
+    transform: scale(1.5);
+    border-radius: 1px;
+}
+input,textarea,select{
+    background-color: #fdfdfd;
+    border: 1px solid #6f6f6f;
+    padding: 5px;
+}
+.rightTab textarea{
+    height: 100px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 550px){
+    .rowTab{
+          grid-template-columns: 1fr;
+        grid-template-areas: 
+            "labels"
+            "rightTab";
+        
+    }
+    .labels{
+    display: inline-block;
+    text-align: left;
+}
+    
+}
+
+
+
+
+
